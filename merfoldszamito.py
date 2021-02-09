@@ -2,8 +2,8 @@ print("Üdv, ez egy km-t mérföldbe átváltó program :)")
 
 kilos = float(input("Adj meg egy értéket: "))
 miles = 1.6
-yes = str("igen")
-no = str("nem")
+yes = "igen"
+no = "nem"
 
 print("Értéked: ", kilos * miles, "mérföld")
 
@@ -14,9 +14,13 @@ while True:
         print("Szia, szép napot!")
         break
 
-    else:
+    elif guess == yes:
+        print("Folytassuk")
         kilos = float(input("Adj meg egy értéket: "))
         miles = 1.6
-        yes = str("igen")
-        no = str("nem")
+        yes = "igen"
+        no = "nem"
         print("Értéked: ", kilos * miles, "mérföld")
+
+    else:
+        print("Felelj igennel vagy nemmel!")
